@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Walmart</title>
+	<!-- LOGO -->
+	<link rel="shortcut icon" type="image/x-icon" href="style/img/logo.png">
+
+	<!-- ETIQUETAS DE BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- FIN ETIQUETAS DE BOOTSTRAP -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style/css/slider_producto.css">
+	<link rel="stylesheet" type="text/css" href="style/css/slider_categoria.css">
+	<link rel="stylesheet" type="text/css" href="style/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="style/css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="style/css/owl.theme.default.min.css">
+
+	<!-- iconos -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<!-- fuente -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- BARRA DE NAVEGACION-->
+<div class="div_nav" >
+	<nav class="navbar navbar-expand-sm  navbar-dark">
+		<!-- logo -->
+		<a class="navbar-brand" href="index.html"><img src="style/img/logo2.svg" class="img_logo"></a>
+		<!-- categorias -->	
+		<ul id="navv" class="navbar-nav pr-4">
+			<li class="nav-item">
+				<a class="nav-link" style="color: #fff;" href="#"><i class="fas fa-align-justify"></i> Categoria</a>	
+				<ul>
+					<li><a href="#" class="acategorias" >sub1 <img src="style/img/icono_cate.png"></a><ul>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="acategorias">sub2 <img src="style/img/icono_cate.png"></a>
+					<ul>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="acategorias">sub3 <img src="style/img/icono_cate.png"></a>	
+					<ul>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>		
+				</li>
+				<li><a href="#" class="acategorias">sub4 <img src="style/img/icono_cate.png"></a>
+					<ul>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="cont/lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+		<!-- input -->
+		<input type="text" name="buscador" class="input_buscador" placeholder="Buscar">
+		<!-- Links -->
+		<ul class="navbar-nav">
+			<ul id="navv" class="navbar-nav pr-4">
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="style/img/iconos_nav/favoritos.png"> <p class="txt-categorias">Favoritos</p></a>	
+				<ul >
+					<li><a href="#" class="acategorias" >Productos</a>
+						<ul>
+							<li>
+								<div class="favoritoslista" id="favoritoslista">
+									<div class="cont_fav_prod">
+										<img src="style/img/prueba_1.png">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="style/img/slider1.jpg">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="style/img/slider1.jpg">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<a href="cont/favoritos_lista/index.html" class="link_todos_fav">Ver todos los favoritos</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" class="acategorias">Tienda</a>
+						<ul>
+							<li>
+								<div class="favoritoslista" id="favoritoslista">
+									<div class="cont_fav_prod">
+										<img src="style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<a href="cont/favorito_tienda/index.html" class="link_todos_fav">Ver todos los favoritos</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="style/img/iconos_nav/ingreso.png"> <p class="txt-categorias">Ingresar</p></a>
+				<ul>
+					<li><a href="cont/inicio_sesion/index.html" class="acategorias">Ingresar</a><li>
+					<li><a href="cont/registro/index.html" class="acategorias">Registrarte</a><li>
+				</ul>
+			</li>
+			<li class="nav-item"  id="icono-carrito">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="style/img/iconos_nav/carrito.png"><p class="txt-carrito-top" style="opacity: 1;">Carrito</p></a>
+				<ul>
+					<li>
+						<div class="favoritoslista" id="favoritoslista" style="margin-left: -170%;">
+							<div class="cont_fav_prod">
+								<img src="style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<div class="separador"></div>
+							<div class="cont_fav_prod">
+								<img src="style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<div class="separador"></div>
+							<div class="cont_fav_prod">
+								<img src="style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<a href="cont/carro/index.html" class="link_todos_fav">Pagar</a>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<!-- UBICACION LOCAL  -->
+<div class="locacion_sucursal">
+	<a onclick="">Seleccione sucursal <i class="fas fa-map-marker-alt"></i></a>
+	<a href="cont/compras_antes/index.html" class="txt-miscompras">Mis compras</a>
+</div>
+
+<!-- FAVORITOS  -->
+<br>
+<!-- FOTOS INICIO/ slider  -->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons fin-->
+        <!--slide imagen-->
+        <div class="slide first">
+          <img  src="style/img/slider1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img  src="style/img/slider2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="style/img/slider3.png" alt="">
+        </div>
+        <div class="slide">
+          <img  src="style/img/slider4.png" alt="">
+        </div>
+        <!--slide imagen fin-->
+        <!--automatico slider-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatico-->
+      </div>
+      <!--navegacion manual-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--fin navegacion manual-->
+    </div>
+    <!--imagen slider find-->
+
+<br>
+<!--CARRUCEL DE categorias-->
+<div class="owl-carousel owl-theme">
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/almacen.png"></a><p>Almacen</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/automotor-ferreteria.png"></a><p>Ferreteria</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/bebes-mamas.png"></a><p>Bebes</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/bibidas-alcoholicas.png"></a><p>Alcohol</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/desayuno.png"></a><p>Desayuno</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/frescos.png"></a><p>Frescos</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/gaseosas.png"></a><p>Gaseosas</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/hogar-bazar.png"></a><p>Hogar</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/jugueteria.png"></a><p>Jugueteria</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/lacteos.png"></a><p>Lacteos</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/libreria.png"></a><p>Libreria</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/limpieza-muebles.png"></a><p>L. muebles</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/limpieza-cocina.png"></a><p>L. cocina</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/limpieza-ropa.png"></a><p>L. ropa</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/mascotas.png"></a><p>Mascotas</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/pañales.png"></a><p>Pañales</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/pequeño-electrodomestico.png"></a><p>Electro</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/perfumeria.png"></a><p>Perfumeria</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/tecnologia.png"></a><p>Tecnologia</p></div>
+	<div class="item"><a href="#"><img src="style/img/categoria_iconos/tv.png"></a><p>tv</p></div>
+</div>
+
+
+
+<!--CARRUCEL DE PRODCUTOS-->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+		<!--SLIDER 4-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+
+		<!--SLIDER 5-->
+		<div class="swiper-slide">
+			<div class="slider-box">
+				<p class="time">Nuevo</p>
+				<div class="img-box">
+					<img src="style/img/slider1.jpg">
+				</div>
+				<p class="detail">Descripcion<a href="#" class="price">precio-$35</a></p>
+				<div class="cart">
+					<a href="#">Agregar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	 <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>	
+
+
+<!-- tarjeta DE PRODUCTOS-->
+<div class="container py-3">
+	<div class="row row-cols-1 row-cols-md-4 ">
+		<div class="col mb-4">
+			<div class="card">
+				<img class="card-img-top" src="style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<img class="card-img-top" src="style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<img class="card-img-top" src="style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<img class="card-img-top" src="style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<img class="card-img-top" src="style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary" >1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- barra secundaria-->
+
+<div class="barra_secundaria_respponsibe">
+	<div class="cont-home" style="margin-left: 1%;">
+		<a href="index.html"><img src="style/img/iconos_nav/home.png">
+		<p>&nbsp;&nbsp;&nbsp;Home</p></a>
+	</div>
+	<div class="cont-home">
+		<a href="cont/categoria_responsibe/index.html"><img src="style/img/iconos_nav/categorias.png">
+		<p>Categorias</p></a>
+	</div>
+	<div class="cont-home" style="margin-left: -1%;">
+		<lo><button type="button" data-toggle="dropdown"><img src="style/img/iconos_nav/favoritos.png"><p>&nbsp;Favoritos</p></button>
+			<div class="dropdown-menu" style="margin-bottom: 2%;">
+				<a class="dropdown-item" href="cont/favoritos_lista/index.html">Productos</a>
+				<a class="dropdown-item" href="cont/favorito_tienda/index.html">Tienda</a>
+			</div>
+		</lo>
+	</div>
+	<div class="cont-home" style="margin-left: 0%;">
+		<a href="cont/carro/index.html"><img src="style/img/iconos_nav/carrito.png">
+		<p>&nbsp;&nbsp;&nbsp;Carrito</p></a>
+	</div>
+	<div class="cont-home">
+		<a href="cont/inicio_sesion/index.html"><img src="style/img/iconos_nav/ingreso.png">
+		<p>&nbsp;&nbsp;ingreso</p></a>
+	</div>
+
+</div>
+
+
+
+
+
+<!-- FOOTER-->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Informacion</h6>
+            <p class="text-justify"><i>SE RESERVAN TODOS LOS DERECHOS </i> comercio digital de la cadena de supermercados: Walmart.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categorias</h6>
+            <ul class="footer-links">
+              <li><a href="cont/carro/index.html">Carrito</a></li>
+              <li><a href="cont/carrito_anteriores/index.html">Mis compras</a></li>
+              <li><a href="cont/contraseña_olvidada/index.html">¿Olvidaste tu contraseña?</a></li>
+              <li><a href="cont/inicio_sesion/index.html">Inicio de sesion</a></li>
+              <li><a href="cont/registro/index.html">Registro</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Informacion</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Politicas de privacidad</a></li>
+              <li><a href="#">Map</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Walmart</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+<script type="text/javascript" src="style/js/nav.js"></script>
+<script type="text/javascript" src="style/js/swiper.min.js"></script>
+<script type="text/javascript" src="style/js/slider_producto.js"></script>
+<script type="text/javascript" src="style/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="style/js/owl.carousel.js"></script>
+<script type="text/javascript" src="style/js/slide_categorias.js"></script>
+<script type="text/javascript" src="style/js/slider_principal.js"></script>
+
+</body>
+</html>

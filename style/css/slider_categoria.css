@@ -1,0 +1,36 @@
+
+.owl-carousel{
+	margin-top: 1%;
+	
+}
+.img-fluid{
+	max-width: 100%;
+	height: 100%;
+	display: block;
+}
+.item{
+	margin-right: -25%;
+	margin-left: -25%;
+	width: 55px;
+	height: 75px;	
+	margin-bottom: 1%;
+}
+.item img{
+	object-fit: cover;
+	margin-top: 3%;
+	width: 55px;
+	height: 55px;
+}
+.item p{
+	font-size: 90%;
+	text-align: center;
+}
+
+.item:hover{
+	transform: scale(1.07);
+	transition: all ease 0.3s;
+}
+
+
+
+

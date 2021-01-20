@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Walmart</title>
+	<!-- LOGO -->
+	<link rel="shortcut icon" type="image/x-icon" href="../../style/img/logo.png">
+	<!-- ETIQUETAS DE BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- iconos -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<!-- js -->
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<!-- BARRA DE NAVEGACION-->
+<div class="div_nav">
+	<nav class="navbar navbar-expand-sm  navbar-dark">
+		<!-- logo -->
+		<a class="navbar-brand" href="../../index.html"><img src="../../style/img/logo2.svg" class="img_logo"></a>
+	</nav>
+</div>
+<!--TITULO-->
+<h1 class="titulo">¿Olvidaste tu contraseña?</h1>
+<p>Le enviaremos su contraseña a su Email</p>
+<!-- Formulario Ingreso -->
+<div class="form_registro">
+	<form class="needs-validation pt-2" novalidate>
+		<div class="form-group">
+			<div class="form-group">
+				<input type="email" class="form-control" id="uname" placeholder="Ingrese su Mail" name="uname" required>
+				<div class="valid-feedback">Correcto.</div>
+				<div class="invalid-feedback">Por favor rellene este campo.</div>
+			</div>
+		<button type="submit" class="btn">Enviar</button><br>
+	</form>
+<script type="text/javascript">validacion();</script>
+</div>
+</body>
+</html>

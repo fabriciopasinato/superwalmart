@@ -1,0 +1,150 @@
+
+.swiper-container{
+	width: 65%;
+}
+.swiper-slide{
+	width: 170px !important;
+}
+.slider-box{
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+	margin: 20px;
+	height: 300px;
+	width: 190px;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.slider-box a{
+	text-decoration: none;
+	text-align: center;
+}
+
+.img-box{
+	height: 170px;
+}
+.img-box img{
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.time{
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	color: #0879c9;
+}
+.detail{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	font-size: 13px;
+	line-height: 35px;
+}
+.price{
+	color: #0879c9;
+	line-height: 20px;
+	font-size: 130%;
+}
+.cart{
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	background-color: #0879c9;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(187,187,187,1.00);
+	border-radius: 10px;
+}
+.cart a{
+	color: #ffffff;
+}
+.slider-box:hover{
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box:hover .img-box img{
+	transform: scale(1.03);
+	transition: all ease 0.3s;
+}
+.cart:hover{
+	transform: scale(1.1);
+	background-color: #3e5f8a;
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+	transition: all ease 0.1s;
+}
+@media screen and (max-width: 2000px){
+	.swiper-container{
+		width: 61.5%;
+	}
+}
+@media screen and (max-width: 1390px){
+	.swiper-container{
+		width: 95%;
+	}
+}
+
+
+@media screen and (max-width: 540px){
+	.swiper-slide{
+		width: 200px !important;
+	}
+	.slider-box{
+		margin: 20px;
+		height: 300px;
+		width: 200px;
+	}
+}
+@media screen and (max-width:420px){
+	.swiper-slide{
+		width: 130px !important;
+	}
+	.slider-box{
+		margin: 20px;
+		height: 250px;
+		width: 150px;
+	}
+	.detail{
+		margin-top: -35%;
+	}
+	.cart{
+		height: 30px;
+	}
+}
+@media screen and (max-width:380px){
+	.swiper-slide{
+		width: 90px !important;
+	}
+	.slider-box{
+		margin: 20px;
+		height: 210px;
+		width: 110px;
+	}
+	.detail{
+		margin-top: -80%;
+	}
+	.cart{
+		height: 30px;
+	}
+	.time{
+		font-size: 70%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

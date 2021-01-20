@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- ETIQUETAS DE BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- FIN ETIQUETAS DE BOOTSTRAP -->
+		<!-- iconos -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+<!-- BARRA DE NAVEGACION-->
+<div class="div_nav ">
+	<nav class="navbar navbar-expand-sm  navbar-dark">
+		<!-- logo -->
+		<a class="navbar-brand" href="../../index.html"><img src="../../style/img/logo2.svg" class="img_logo"></a>
+		<!-- categorias -->	
+		<ul id="navv" class="navbar-nav pr-4">
+			<li class="nav-item">
+				<a class="nav-link" style="color: #fff;" href="#"><i class="fas fa-align-justify"></i> Categoria</a>	
+				<ul>
+					<li><a href="#" class="acategorias" >sub1 <img src="../../style/img/icono_cate.png"></a><ul>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="acategorias">sub2 <img src="../../style/img/icono_cate.png"></a>
+					<ul>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="acategorias">sub3 <img src="../../style/img/icono_cate.png"></a>	
+					<ul>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>		
+				</li>
+				<li><a href="#" class="acategorias">sub4 <img src="../../style/img/icono_cate.png"></a>
+					<ul>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub1</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub2</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub3</a></li>
+						<li><a href="../lista_prod_categorias/index.html" class="acategorias">sub4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+		<!-- input -->
+		<input type="text" name="buscador" class="input_buscador" placeholder="Buscar">
+		<!-- Links -->
+		<ul class="navbar-nav">
+			<ul id="navv" class="navbar-nav pr-4">
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="../../style/img/iconos_nav/favoritos.png"> <p class="txt-categorias">Favoritos</p></a>	
+				<ul >
+					<li><a href="#" class="acategorias" >Productos</a>
+						<ul>
+							<li>
+								<div class="favoritoslista" id="favoritoslista">
+									<div class="cont_fav_prod">
+										<img src="../../style/img/prueba_1.png">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="../../style/img/slider1.jpg">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="../../style/img/slider1.jpg">
+										<p class="fav_descipcion">Descipcion</p>
+										<p class="fav_produc">Precio</p>
+									</div>
+									<a href="../favoritos_lista/index.html" class="link_todos_fav">Ver todos los favoritos</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" class="acategorias">Tienda</a>
+						<ul>
+							<li>
+								<div class="favoritoslista" id="favoritoslista">
+									<div class="cont_fav_prod">
+										<img src="../../style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="../../style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<div class="separador"></div>
+									<div class="cont_fav_prod">
+										<img src="../../style/img/slider1.jpg">
+										<p class="fav_descipcion">Nombre</p>
+										<p class="fav_produc">Locacion</p>
+									</div>
+									<a href="../favorito_tienda/index.html" class="link_todos_fav">Ver todos los favoritos</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			<li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="../../style/img/iconos_nav/ingreso.png"> <p class="txt-categorias">Ingresar</p></a>
+				<ul>
+					<li><a href="../inicio_sesion/index.html" class="acategorias">Ingresar</a><li>
+					<li><a href="../registro/index.html" class="acategorias">Registrarte</a><li>
+				</ul>
+			</li>
+			<li class="nav-item"  id="icono-carrito">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img class="icon-nav" src="../../style/img/iconos_nav/carrito.png"><p class="txt-carrito-top" style="opacity: 1;"> Carrito</p></a>
+				<ul>
+					<li>
+						<div class="favoritoslista" id="favoritoslista" style="margin-left: -170%;">
+							<div class="cont_fav_prod">
+								<img src="../../style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<div class="separador"></div>
+							<div class="cont_fav_prod">
+								<img src="../../style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<div class="separador"></div>
+							<div class="cont_fav_prod">
+								<img src="../../style/img/slider1.jpg">
+								<p class="fav_descipcion">Descipcion</p>
+								<p class="fav_produc">Precio</p>
+							</div>
+							<a href="../carro/index.html" class="link_todos_fav">Pagar</a>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- UBICACION LOCAL  -->
+<div class="locacion_sucursal">
+	<a  onclick="">Seleccione sucursal <i class="fas fa-map-marker-alt"></i></a>
+	<a href="../compras_antes/index.html" class="txt-miscompras">Mis compras</a>
+</div>
+<br>
+	<!--TITULO-->
+<h1 class="titulo">Compras</h1>
+<a href="#" class="a-papelera"><img src="../../style/img/papelera.png" class="principal_papelera"></a>
+
+	<!-- tarjeta DE PRODUCTOS-->
+<div class="container py-3">
+	<div class="row row-cols-1 row-cols-md-4 ">
+		<div class="col mb-4">
+			<div class="card">
+				<a href="#"class="a-papelera"><img src="../../style/img/papelera.png" class="papelera"></a>
+				<img class="card-img-top" src="../../style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<a href="#" class="a-papelera"><img src="../../style/img/papelera.png" class="papelera"></a>
+				<img class="card-img-top" src="../../style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<a href="#" class="a-papelera"><img src="../../style/img/papelera.png" class="papelera"></a>
+				<img class="card-img-top" src="../../style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<a href="#" class="a-papelera"><img src="../../style/img/papelera.png" class="papelera"></a>
+				<img class="card-img-top" src="../../style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-4">
+			<div class="card">
+				<a href="#" class="a-papelera"><img src="../../style/img/papelera.png" class="papelera"></a>
+				<img class="card-img-top" src="../../style/img/slider1.jpg" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title">Descripcion</h4>
+					<p class="produc_nombre">Producto Nombre</p>	
+					<p class="produc_precio">Precio</p>
+					<div class="btn-group btn-group-sm">
+	    				<button type="button" class="btn btn-primary">+</button>
+	    				<button type="button" class="btn btn-primary">1</button>
+	   					<button type="button" class="btn btn-primary">-</button>
+	  				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- barra secundaria-->
+
+<div class="barra_secundaria_respponsibe">
+	<div class="cont-home" style="margin-left: 1%;">
+		<a href="../../index.html"><img src="../../style/img/iconos_nav/home.png">
+		<p>&nbsp;&nbsp;&nbsp;Home</p></a>
+	</div>
+	<div class="cont-home" style="margin-left: -1%;">
+		<a href="../categoria_responsibe/index.html"><img src="../../style/img/iconos_nav/categorias.png">
+		<p>Categorias</p></a>
+	</div>
+	<div class="cont-home"  style="margin-left: -5%;">
+
+		<lo><button type="button" class="nav-item2" data-toggle="dropdown"><img src="../../style/img/iconos_nav/favoritos.png"><p>Favoritos</p></button>
+			<div class="dropdown-menu" style="margin-bottom: 2%;">
+				<a class="dropdown-item" href="../favoritos_lista/index.html">Productos</a>
+				<a class="dropdown-item" href="../favorito_tienda/index.html">Tienda</a>
+			</div>
+		</lo>
+
+	</div>
+	<div class="cont-home" style="margin-left: 5%;">
+		<a href="../carro/index.html"><img src="../../style/img/iconos_nav/carrito.png">
+		<p>&nbsp;&nbsp;Carrito</p></a>
+	</div>
+	<div class="cont-home">
+		<a href="../inicio_sesion/index.html"><img src="../../style/img/iconos_nav/ingreso.png">
+		<p>&nbsp;&nbsp;ingreso</p></a>
+	</div>
+</div>
+
+
+
+<!-- FOOTER-->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Informacion</h6>
+            <p class="text-justify"><i>SE RESERVAN TODOS LOS DERECHOS </i> comercio digital de la cadena de supermercados: Walmart.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categorias</h6>
+            <ul class="footer-links">
+              <li><a href="../carro/index.html">Carrito</a></li>
+              <li><a href="../carrito_anteriores/index.html">Mis compras</a></li>
+              <li><a href="#">¿Olvidaste tu contraseña?</a></li>
+              <li><a href="../inicio_sesion/index.html">Inicio de sesion</a></li>
+              <li><a href="../registro/index.html">Registro</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Informacion</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Politicas de privacidad</a></li>
+              <li><a href="#">Map</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Walmart</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+<script type="text/javascript" src="../../style/js/nav.js"></script>
+</body>
+</html>
